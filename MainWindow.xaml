@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_VisorImagenes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinWidth="400" MinHeight="400">
+        Title="MainWindow" Height="450" Width="800" MinWidth="400" MinHeight="400" Icon="assets/Thumbnails-80_icon-icons.com_57262.ico">
         
     <DockPanel>
         <DockPanel DockPanel.Dock="Bottom" Background="Aqua" Margin="5"  LastChildFill="False">
             <TextBlock DockPanel.Dock="Left" Margin="3">Numero de imagenes X</TextBlock>
             <TextBlock  DockPanel.Dock="Right"  Margin="3">Diseñado por Eduardo Moratón</TextBlock>
         </DockPanel>
+        
         <Border DockPanel.Dock="Right" Width="100" Margin="5" BorderThickness="3" BorderBrush="Black" CornerRadius="5" Background="Green">
             <DockPanel LastChildFill="False">
                 <Button DockPanel.Dock="Top" Margin="2">Añadir imagen</Button>
@@ -22,9 +23,9 @@
             </DockPanel>
         </Border>
 
-        <StackPanel DockPanel.Dock="Top">
-            <TextBlock HorizontalAlignment="Center" FontSize="22">Visor de Imágenes</TextBlock>
-        </StackPanel>
+        
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="22">Visor de Imágenes</TextBlock>
+        
         <WrapPanel>
             <Image Source="assets/images/episodioIV.jpg" Width="100"></Image>
             <Image Source="assets/images/episodioIV.jpg" Width="100"></Image>
